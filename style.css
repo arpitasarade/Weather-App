@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 25px;
+    color: #000000; 
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.search button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search button:hover {
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.search i {
+    color: #000000;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 18px;
+    color: #000000; 
+    background: #ffffff;
+}
+
+input::placeholder {
+    color: #666666;
+}
+
+.card {
+    animation: fade 0.6s ease-in-out;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    color: #000000; 
+}
+
+.card img {
+    width: 130px;
+    margin: 15px 0;
+}
+
+#city {
+    font-weight: 700;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.desc {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info div {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 14px;
+    border-radius: 20px;
+    user-select: none;
+    color: #000000;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

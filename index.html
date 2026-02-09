@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dark Weather App</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <h1>Weather Forecast</h1>
+
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="searchBtn" title="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="card" id="weatherCard">
+            <img id="weatherImg" src="" alt="" />
+            <h2 id="city"></h2>
+            <div class="temp" id="temp"></div>
+            <p class="desc" id="desc"></p>
+
+            <div class="info">
+                <div>💧 <span id="humidity"></span></div>
+                <div>💨 <span id="wind"></span></div>
+                <div>🌡 <span id="feels"></span></div>
+                <div>🌍 <span id="pressure"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
